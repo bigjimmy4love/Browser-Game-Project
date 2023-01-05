@@ -1,4 +1,4 @@
-var Ball = function( {
+var Ball = function( ){
     // List of variables only the object can see (private variables).
     var velocity = [0,0];
     var position = [0,0];
@@ -31,7 +31,7 @@ var Ball = function( {
     return {
       update:       update,
       pause:        pause,
-      start:        start
+      start:        start,
   }
 
   var ball = Ball();
@@ -396,5 +396,4 @@ function AI(playerToControl) {
   
     repeat(randomMove, randomAimAndFire, 250, numRepeats);
   
-  }
-
+  }}
